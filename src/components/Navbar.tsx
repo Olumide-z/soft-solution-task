@@ -20,7 +20,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="h-[71px] bg-[#fff] pr-6 shadow-md w-full fixed flex items-center justify-between z-[9999]">
+    <nav className="h-[71px] bg-[#fff] pr-4 sm:pr-6 shadow-md w-full fixed flex items-center justify-between z-[9999]">
       <div className="md:flex items-center justify-between hidden">
         {/* logo */}
         <div className="w-[194px] h-[71px] relative">
@@ -40,7 +40,7 @@ const Navbar = () => {
       {/* sidebar */}
       <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />
       {/* hamburger */}
-      <button className="cursor-pointer pl-6 md:hidden flex" onClick={() => setIsOpen(true)}>
+      <button className="cursor-pointer pl-4 sm:pl-6 md:hidden flex" onClick={() => setIsOpen(true)}>
         <img
           src="/images/Menu.svg"
           alt="menu"
